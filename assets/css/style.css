@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: rgb(163, 41, 41);
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    justify-content: center;
+    width: 100%;
+    
+}
+
+#image{
+    width: 300px;
+    object-fit: cover;
+    
+}
+
+h3 {
+    color: white;
+}
+
+.container {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    row-gap: 1rem;
+    place-items: center;
+}
+
+#cardapio{
+    height: 150px;
+
+}
+
+
+.card {
+    border-radius: 10px;
+    max-height: 100%;
+}
+
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 285px !important;
+    max-height: 275px;
+    border-radius: 9px;
+}
+
+.btn {
+    margin-top: auto;
+}
+
+#slogan small {
+    color: white;
+    letter-spacing: 0.1em;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.offcanvas, .offcanvas-end {
+
+    width: 40rem !important;
+    align-items: center;
+    display: flow-root;
+
+}
+
+
+.logo-carrinho{
+    width: 100%;
+}
+
+#logo-carrinho {
+    width: 80px;
+    border-radius: 50px;
+}
+
+input {
+    width: 0;
+    border-radius: 6px;
+
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+#carrinho {
+    height: 25px;
+    width: 25px;
+}
+
+
+.container-subtotal {
+    position : absolute;
+    bottom : 15px;
+    height : 40px;
+    margin-top : 40px;
+    
+  }
+
+  .container-valor-subtotal {
+    position: absolute;
+    bottom: 70px;
+  }
+
+  span {
+    color: red;
+  }
+
+  .container-carrinho {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .produto {
+    background-image: linear-gradient(269deg,  black,rgb(244, 104, 104));
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+  }
