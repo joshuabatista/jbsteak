@@ -21,3 +21,5 @@ RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [L,R=301]
 
     RewriteRule ^cadastrar/?$ pages/cadastrar-produto.php [NC]
 
+    RewriteRule ^admin/?$ pages/admin.php [NC]
+

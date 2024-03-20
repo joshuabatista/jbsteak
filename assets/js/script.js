@@ -17,6 +17,8 @@ const buscaLanches = async () =>{
 
 //renderiza os laches
 
+
+
 const renderizaLanches = (lanches) =>{
 
     $(".container").empty()
