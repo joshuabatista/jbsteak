@@ -2,7 +2,7 @@
 
 require "../config/conexao.php";
 
-$sql = "SELECT * FROM produtos";
+$sql = "SELECT * FROM produtos ";
 
 $query = $pdo->query($sql);
 

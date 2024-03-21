@@ -26,7 +26,7 @@ const login = () => {
                 text: data.message,
               }).then(() => {
 
-                    location.href = "/cadastrar"
+                    location.href = "/admin"
               })
         }
     });

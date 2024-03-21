@@ -55,8 +55,13 @@ img {
     border-left: 4px solid red;
 }
 
-label {
-    text-align: center;
+.label-editar {
+    color: black !important;
+    margin-top: 20px;
+}
+
+#switch{
+    color: white !important
 }
 
 button {
@@ -64,7 +69,25 @@ button {
 
 }
 
+#botao-fechar, #botao-salvar, #botao-editar{
+    width: 85px;
+}
+
 .card p {
     margin: 0;
     max-width: 472px;
+}
+
+.descricao-produto{
+    max-width: 500px;
+    width: 500px;
+}
+
+#imagem-produto-editar{
+
+    width: 110px;
+    border-radius: 8px;
+    border: solid 2px black;
+    margin-bottom: 20px;
+
 }

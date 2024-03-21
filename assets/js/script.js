@@ -26,6 +26,8 @@ const renderizaLanches = (lanches) =>{
     let card = ''
 
     lanches.forEach(element => {
+
+        if (element.status == 0) {
         
         card += `
             <div class="card" style="width: 18rem; height: 491px;" data-id="${element.id}" data-produto="${element.produto}" data-valor="${element.valor}">
@@ -37,6 +39,7 @@ const renderizaLanches = (lanches) =>{
                 </div>
             </div>
         `
+        }
 
     });
 

@@ -1,3 +1,16 @@
+<?php
+
+	session_start();
+
+	if(isset($_SESSION["id"])){
+		header("Location: /admin");
+		die;
+	}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 

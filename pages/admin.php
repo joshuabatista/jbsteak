@@ -1,3 +1,16 @@
+<?php
+
+	session_start();
+
+	if(!isset($_SESSION["id"])){
+		header("Location: /login");
+		die;
+	}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,8 +18,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./assets/css/style-admin.css">
     <link rel="icon" href="./images/Logo - JB Steak Burguer - 2023-07.png">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -29,34 +44,50 @@
         <h3 class="mb-3">Administrar cardapio</h3>
     </div>
 
-    <div class="container-card">
-        <!-- <div class="card d-flex align-items-center mx-auto mt-3 card-adm">
-            <div class="d-flex gap-3 align-items-center justify-content-center">
-                <div>
-                    <img src="./images/jb-cheddar.jpeg" alt id="lanche">
+    <div class="container-card"></div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div>
-                    <h6><b>JB Cheddar</b></h6>
-                    <p name="descricao" id=""> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor deleniti
-                        voluptatum repellat nemo velit, reprehenderit iure exercitationem quam dolores inventore quisquam
-                        dicta ipsum praesentium, debitis corporis doloremque voluptas, quos eius!</p>
+                <div class="modal-body">
+                    <form id="editar-produto">
+                        <input type="hidden" name="id" id="id">
+                        <div class="text-center">
+                            <img src="" id="imagem-produto-editar">
+                        </div>
+                        <div>
+                            <label for="" class="label-editar"><b>Selecionar nova imagem</b></label>
+                            <input type="file" name="imagem" id="" class="form-control">
+                        </div>
+                        <div>
+                            <label for="" class="label-editar"><b>Nome do produto</b></label>
+                            <input type="text" name="nome-produto" id="nome-produto-editar" class="form-control">
+                        </div>
+                        <div>
+                            <label for="" class="label-editar"><b>Descrição</b></label>
+                            <textarea name="descricao-produto" cols="25" rows="5" id="descricao-produto-editar"
+                                class="form-control"></textarea>
+                        </div>
+                        <div>
+                            <label for="" class="label-editar"><b>Valor</b></label>
+                            <input type="text" name="valor-produto" id="valor-produto-editar" class="form-control">
+                        </div>
+                    </form>
                 </div>
-                <div>
-                    <p>R$25,00</p>
-                </div>
-    
-                <button class="btn btn-sm btn-success"><i class="fa-solid fa-pen"></i></button>
-                <button class="btn btn-sm btn-danger"><i class="fa-solid fa-trash"></i></button>
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                    <label class="form-check-label" for="flexSwitchCheckDefault">Inativar
-                    </label>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="botao-fechar"
+                        data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" id="botao-salvar">Salvar</button>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
 
-    <script src="./assets/js/script.admin.js"></script>
+    <script src="../assets/js/script.admin.js"></script>
 </body>
 
 </html>

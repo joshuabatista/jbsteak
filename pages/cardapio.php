@@ -36,7 +36,7 @@
     <?php require "includes/header.php"; ?>
 
     <div class="d-flex justify-content-center logo">
-        <img src="../images/Logo - JB Steak Burguer - 2023-07.png" id="image">
+        <img src="../images/logo_animada_jb.gif" id="image">
     </div>
 
     <div class="d-flex justify-content-center flex-column align-items-center" id="slogan">
