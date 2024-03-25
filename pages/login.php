@@ -37,7 +37,7 @@
     <div class="container">
         <div class="login">
             <div class="titulo">
-                <img src="./images/Logo - JB Steak Burguer - 2023-07.png" alt="">
+                <img src="./images/logo_animada_jb.gif" alt="">
             </div>
             <form id="form-login">
                 <div class="forms">
