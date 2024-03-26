@@ -91,3 +91,8 @@ button {
     margin-bottom: 20px;
 
 }
+
+.nav-link {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}

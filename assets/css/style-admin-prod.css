@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: rgb(163, 41, 41);
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+#linha-1{
+    color: black !important;
+}
+
+#imagem {
+    width: 250px;
+}
+
+.componente {
+    cursor: pointer;
+    background-color: rgb(153, 1, 1);
+    max-width: 211px;
+    width: 211px;
+    height: 216px;
+    border-radius: 8px;
+    border-inline: black 2px solid;
+    border-bottom: black 2px solid;
+    border-top: black 2px solid;
+    padding: 1rem;
+}
+
+.componente:hover {
+    background-color: rgba(153, 1, 1, 0.747);
+    color: black;
+}
+
+#card-adm, #card-pedidos{
+    height: 120px;
+    margin: auto;
+    margin-top: 7px;
+
+}
+
+.components{
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+

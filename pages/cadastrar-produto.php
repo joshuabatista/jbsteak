@@ -32,9 +32,17 @@
 	<div class="logo d-flex justify-content-center">
 		<img src="./images/logo_animada_jb.gif">
 	</div>
-	<hr id="linha-1">
+	<ul class="nav nav-tabs mt-2 tabs-uge d-flex">
+        <li class="nav-item" id="editar">
+            <a class="nav-link nav-nav" href="/admin"><b>Editar cardapio</b></a>
+        </li>
+        <li class="nav-item nav-nav" id="cadastrar">
+            <a class="nav-link active" aria-current="page" href="/cadastrar"><b>Cadastrar produto</b></a>
+        </li>
+    </ul>
+	<br>
 	<div class="text-center">
-		<h1>Cadastrar novo produto</h1>
+		<h3>Cadastrar novo produto</h3>
 	</div>
 	<form id="cadastrar-produto">
 		<div class="container d-flex">

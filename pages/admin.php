@@ -21,7 +21,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./assets/css/style-admin.css">
     <link rel="icon" href="./images/Logo - JB Steak Burguer - 2023-07.png">
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -36,16 +35,25 @@
     <!-- nav-bar -->
     <?php require "includes/header.php"; ?>
 
+
     <div class="logo d-flex justify-content-center">
         <img src="./images/logo_animada_jb.gif" id="imagem">
     </div>
-    <hr id="linha-1">
+    
+    <ul class="nav nav-tabs mt-2 tabs-uge d-flex">
+        <li class="nav-item" id="editar">
+            <a class="nav-link active" aria-current="page" href="/admin"><b>Editar cardapio</b></a>
+        </li>
+        <li class="nav-item" id="cadastrar">
+            <a class="nav-link" href="/cadastrar"><b>Cadastrar produto</b></a>
+        </li>
+    </ul>
+    <br>
     <div class="text-center">
-        <h3 class="mb-3">Administrar cardapio</h3>
+        <h3 class="mb-3">Administrar cardápio</h3>
     </div>
 
     <div class="container-card"></div>
-
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">

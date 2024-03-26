@@ -39,7 +39,7 @@
                     aria-controls="offcanvasExample"><b>Carrinho</b></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/cadastrar"><b>Cadastro de produtos</b></a>
+                <a class="nav-link" href="/administrar"><b>Administrador</b></a>
             </li>
                 <li class="nav-item d-flex" id="login">
                     <a class="nav-link" href="/login"><b>Login</b></a>
