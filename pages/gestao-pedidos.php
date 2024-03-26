@@ -21,72 +21,54 @@
 <body>
     <?php require "includes/header.php"; ?>
 
-    <!-- <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">N° Pedido</th>
-      <th scope="col">Produto</th>
-      <th scope="col">Quantidade</th>
-      <th scope="col">R$</th>
-      <th scope="col">Cliente</th>
-      <th scope="col">Endereço</th>
-      <th scope="col">Telefone</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">135418</th>
-      <td>JB Cheddar</td>
-      <td>1</td>
-      <td>R$ 35,00</td>
-      <td>Joshua</td>
-      <td>Av. Antonio Ramiro da Silva</td>
-      <td>980758718</td>
-    </tr>
-  </tbody>
-</table> -->
+    <div class="container">
 
-    <div class="card align-items-center text-center" id="pedido1">
-        <div>
-            <label><b>N° do pedido</b></label>
-            <p>13456</p>
+
+        <div class="container-pedidos">
+            
         </div>
-        <div>
-            <label><b>Produto</b></label>
-            <p>JB Cheddar</p>
-        </div>
-        <div>
-            <label><b>Quantidade</b></label>
-            <p>5</p>
-        </div>
-        <div>
-            <label><b>R$</b></label>
-            <p>R$ 150</p>
-        </div>
-        <div>
-            <label><b>Cliente</b></label>
-            <p>Joshua Batista</p>
-        </div>
-        <div>
-            <label><b>Edereço</b></label>
-            <p>Antonio Ramiro da Silva</p>
-        </div>
-        <div>
-            <label><b>Telefone</b></label>
-            <p>980758718</p>
-        </div>
-        <div>
-            <label><b>Status</b></label>
-            <p>
-                <select>
-                    <option>Pedido recebido</option>
-                    <option>Em preparação</option>
-                    <option>Finalizado</option>
-                </select>
-            </p>
-        </div>
-        <div>
-            <button class="btn btn-danger">Excluir pedido</button>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Informações Adicionais</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex">
+                        <div class="row">
+                            <label for=""><b>Endereço</b></label>
+                            <p>Antonio Ramiro da Silva</p>
+                        </div>
+                        <div>
+                            <label for=""><b>Telefone</b></label>
+                            <p>(11)980758718</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <img src="./images/jb-cheddar.jpeg" alt="imagem do lanche">
+                        </div>
+                        <div>
+                            <label for=""><b>Produto</b></label>
+                            <p>JB Cheddar</p>
+                        </div>
+                        <div>
+                            <label for=""><b>Quantidade</b></label>
+                            <p>01</p>
+                        </div>
+                        <div>
+                            <label for=""><b>R$</b></label>
+                            <p>R$ 25,00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
         </div>
     </div>
 

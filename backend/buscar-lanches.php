@@ -9,3 +9,4 @@ $query = $pdo->query($sql);
 $data = $query->fetchAll(PDO::FETCH_OBJ);
 
 echo json_encode($data);
+
