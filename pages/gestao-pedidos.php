@@ -21,9 +21,7 @@
 <body>
     <?php require "includes/header.php"; ?>
 
-    <div class="container">
-
-
+    <div class="container mt-4">
         <div class="container-pedidos">
             
         </div>
@@ -37,33 +35,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="d-flex">
-                        <div class="row">
-                            <label for=""><b>Endereço</b></label>
-                            <p>Antonio Ramiro da Silva</p>
-                        </div>
-                        <div>
-                            <label for=""><b>Telefone</b></label>
-                            <p>(11)980758718</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div>
-                            <img src="./images/jb-cheddar.jpeg" alt="imagem do lanche">
-                        </div>
-                        <div>
-                            <label for=""><b>Produto</b></label>
-                            <p>JB Cheddar</p>
-                        </div>
-                        <div>
-                            <label for=""><b>Quantidade</b></label>
-                            <p>01</p>
-                        </div>
-                        <div>
-                            <label for=""><b>R$</b></label>
-                            <p>R$ 25,00</p>
-                        </div>
-                    </div>
+                    <div class="container-itens-pedido"></div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>

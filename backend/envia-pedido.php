@@ -62,11 +62,12 @@ foreach ($carrinho as $key => $value) {
 
    $value = (object) $value;
     
-    $sql = "INSERT INTO pedidos_itens (numero_pedido, item, valor, quantidade) values (?, ?, ?, ?)";
+    $sql = "INSERT INTO pedidos_itens (produto_id, numero_pedido, item, valor, quantidade) values (?, ?, ?, ?, ?)";
 
     $query = $pdo->prepare($sql);
 
     $columns = [
+        $value->id,
         $numeroPedido,
         $value->produto,
         $value->valor,
